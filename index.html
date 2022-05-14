@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
-            display: flex;
-            height: 100vh;
+        input:first-child:focus {
+            background-color: red;
         }
-        .aside{
-            flex-basis: 20%;
-            background-color: darkcyan;
-        }
-        .header{
-            flex-basis: 20%;
-            background-color: darkred;
-        }
-        .section{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        .content{
-         display: flex;
-         width: 100%;
-         height: 100%;
 
+        input[type=submit]:focus {
+            background-color: aqua;
         }
-        .column-left{
-            background-color: yellow;
-           
+
+        a:visited:link {
+            color: red;
         }
-        .column-right{
-            background-color: darkgreen;
-           
+
+        .block {
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .block::before {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 5px;
+            background-color: white;
+            top: 10%;
+        }
+
+        .block::after {
+            content: "";
+            position: absolute;
+            width: 90px;
+            height: 5px;
+            background-color: white;
+            bottom: 10px;
+        }
+
+        .popup:hover::after {
+            content: "окно";
+            position: absolute;
+            padding: 1em;
+            top: 50%;
+            left: 25%;
+            border-radius: 5px;
+            white-space: nowrap;
+            background-color: greenyellow;
+            color: black;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="aside">
-            <h1>Меню</h1>
-        </div>
-        <div class="section">
-            <div class="header">
-                <h1>Загаловок</h1>
-            </div>
-            <div class="content">
-                <div class="column-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt possimus ea mollitia doloremque placeat magnam amet nobis sint, nemo similique minima quidem adipisci rem dicta nam corporis quia deserunt laborum.</div>
-                <div class="column-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam animi provident in quidem assumenda sequi beatae odio rem ex ea corrupti facilis harum inventore sed ratione, cupiditate reiciendis id quasi!</div>
-            </div>
-        </div>
-    </div>
+    <form action=""><input type="text" name="" id=""><input type="submit" value="поиск"></form><a href="#">ссылка</a><a
+        href="active.html">ссылка была посещенна</a><a href="netactive.html">ссылка не была посещенна</a>
+    <div class="block">просто текст</div>
+    <div class="popup">наведи на меня курсор</div>
 </body>
+
 </html>
