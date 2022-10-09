@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cosmo/bootstrap.min.css" integrity="sha384-5QFXyVb+lrCzdN228VS3HmzpiE7ZVwLQtkt+0d9W43LQMzz4HBnnqvVxKg6O+04d" crossorigin="anonymous">
+    <!-- CSS only -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">животные</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">главный экран</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">в наличии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">помощ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid vh-100 bg-warning">
+
+
+        <div class="row justify-content-center align-content-center text-white h-100">
+            <div class="container text-center">
+                <h1>Главная страница</h1>
+            </div>
+            <div class="container text-center">
+                <div class="row justify-content-center aling-items-center">
+                    <div class="col-12 col-sm-3 m-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quibusdam, deserunt doloribus aliquam expedita fuga eveniet atque consequuntur nemo minima repellat error blanditiis, autem doloremque, officia ullam dolorem. Eum, ipsam.</div>
+                    <div class="col-12 col-sm-3 m-1">Ea hic ad libero vero tempore, modi eveniet unde a dignissimos mollitia sunt possimus corporis alias, optio enim iure facilis asperiores illum. Vitae error ipsam voluptatum architecto minus fugit vel!</div>
+                    <div class="col-12 col-sm-3 m-1">Qui labore alias incidunt nobis sapiente voluptate ipsa quasi in facere nam cupiditate ullam soluta aliquam quas, placeat porro nemo perferendis amet laudantium ducimus. Dolore ipsam nihil incidunt ab harum.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark " id="cards">
+        <div class="row justify-content-center aling-items-center h-100"><div class="card" style="width: 18rem;">
+            <img src="img/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div></div>
+    </div>
+    <div class="container-fluid vh100 bg-dark" id="carousel">
+
+        <div class="row justify-content-center align-content-center h-100">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/1.jpg" class="d-block img-fluid mx-auto" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/2.jpg " class="d-block img-fluid mx-auto" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner vh-100 bg-white" id="model">
+        <div class="row justify-content-center align-content-center h-100">
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    нажми меня 
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">полезно</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias recusandae est at placeat tempora. Atque temporibus doloribus eaque maxime, quas quasi deserunt eveniet harum omnis corrupti cum dolor velit quisquam.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+    </div>
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
