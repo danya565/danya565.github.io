@@ -8,40 +8,33 @@ body{
     height: 100%;
     grid-template-rows: 1.5fr 4fr 3fr 2fr;
     grid-template-columns: 1fr 1.2fr 2fr;
+    grid-template-areas: 
+    "main main nav"
+    "main main icecream"
+    "tasty healthy icecream"
+    "foother foother icecream" ;
 }
 main{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    position: relative;
+    grid-area:main ;
     background-color: #FCB1B1;
 }  
 .tasty{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-area: tasty;
     background-color: #80eec2;
 } 
 .healthy{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start:2;
-    grid-column-end: 3;
+    grid-area: healthy;
     background-color: #f0f696;
 }
 footer{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: foother;
     background-color: #f5b5fc;
 }
 nav{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    position: relative;
+    display: flex;
+    grid-area: nav;
     background-color: #fff;
 }
 .icecream{
@@ -49,10 +42,7 @@ nav{
     background-size: cover;
     background-position: center;
     background-color: #ade2ce;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-area: icecream;
 }
 .logo span{
     font-family: 'Pacifico', cursive;
@@ -73,3 +63,38 @@ nav{
     font-size: 25px;
     padding: 0 50px;
 }
+.tasty,.healthy,footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h5{
+    color: white;
+}
+h5{
+    font-size: 30px;
+}
+.left,.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hamburger>div{
+    width: 35px;
+    height: 5px;
+    background-color: #707070;
+    margin: 6px 0;
+}
+.hamburger>div:nth-child(2){
+    background-color: #ade2ce;
+}
+.right>span{
+   color: #fc6363;
+}
+span{
+    font-size: 35px;
+}
+
+
+
